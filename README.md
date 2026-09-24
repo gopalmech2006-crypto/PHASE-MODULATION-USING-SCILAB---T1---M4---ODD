@@ -39,6 +39,42 @@ Where:
    * Compute the phase-modulated signal $s(t) = A_c \cos(2\pi f_c t + k_p m(t))$.
 6. **Plot the Signals:**
    * Use Scilab's plotting commands (`subplot`, `plot`, `xtitle`, `xgrid`) to display message, carrier, and modulated signals.
+  
+## PROGRAM
+am=7.2;
+fm=465;
+
+ac=14.2;
+
+fc=4650;
+
+fs=46500;
+
+t=0:1/fs:3/fm;
+
+b=4.7;
+
+em=amcos(23.14fmt);
+
+subplot(4,1,1);
+
+plot(t,em);
+
+ec=accos(23.14fct);
+
+subplot(4,1,2);
+
+plot(t,ec);
+
+efm = ac * cos((23.14fct) + b * sin(23.14fmt));
+
+subplot(4,1,3);
+
+plot(t,efm);
+
+epm= ac * cos((23.14fct) + b * cos(23.14fmt));
+
+subplot(4,1,4);
 
 ---
 ## CALCULATION
